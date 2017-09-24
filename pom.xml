@@ -90,6 +90,7 @@
         <!-- Plugin configuration. There are many available options, 
              see gwt-maven-plugin documentation at codehaus.org --> 
         <configuration>
+    	  <compilerArgs>-XdisableUpdateCheck</compilerArgs>
           <modules>
             <module>ru.wildhuman.Wild_human</module>
           </modules>
