@@ -90,10 +90,11 @@
         <!-- Plugin configuration. There are many available options, 
              see gwt-maven-plugin documentation at codehaus.org --> 
         <configuration>
-    	  <compilerArgs>-XdisableUpdateCheck</compilerArgs>
+    	 <compilerArgs>-XdisableUpdateCheck</compilerArgs>
           <modules>
             <module>ru.wildhuman.Wild_human</module>
           </modules>
+          <outputDirectory>${project.build.directory}/${project.artifactId}</outputDirectory>
           <!-- URL that should be opened by DevMode (gwt:run). -->
           <runTarget>Wild_human.html</runTarget>
           <!-- Ask GWT to create the Story of Your Compile (SOYC) (gwt:compile) -->
